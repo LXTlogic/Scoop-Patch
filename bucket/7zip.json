@@ -2,7 +2,10 @@
     "version": "24.09",
     "description": "一种具有高压缩比的多格式文件归档器",
     "homepage": "https://www.7-zip.org/",
-    "license": "LGPL-2.1-or-later",
+    "license": {
+        "identifier": "Freeware,LGPL-2.1-or-later,BSD-3-Clause",
+        "url": "https://www.7-zip.org/license.txt"
+    },
     "notes": "向右键菜单添加 7-Zip 请运行：\"$dir\\install-context.reg\"",
     "architecture": {
         "64bit": {
