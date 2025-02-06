@@ -1,0 +1,39 @@
+{
+    "version": "0.10.4",
+    "description": "专注于可扩展性和可用性的 Vim 复刻版",
+    "homepage": "https://neovim.io/",
+    "license": "Apache-2.0,Vim",
+    "suggest": {
+        "vcredist": "Scoop-Patch/VCRedist2022"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://gh-proxy.com/github.com/neovim/neovim/releases/download/v0.10.4/nvim-win64.zip",
+            "hash": "dceeb8301f64e244e3e2dffaedbb153bd01c0c6ecb5024a90e3172dc8e65555c"
+        }
+    },
+    "extract_dir": "nvim-win64",
+    "bin": "bin\\nvim.exe",
+    "shortcuts": [
+        [
+            "neovim.exe",
+            "Neovim"
+        ]
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/neovim/neovim/releases/latest",
+        "jsonpath": "$.body",
+        "regex": "NVIM v(?<majorVersion>[\\w.-]+)\\.(?<minorVersion>[\\w.-]+)\\.(?<patchVersion>[\\w.-]+)",
+        "replace": "${majorVersion}.${minorVersion}.${patchVersion}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://gh-proxy.com/github.com/neovim/neovim/releases/download/v$version/nvim-win64.zip"
+            }
+        },
+        "hash": {
+            "url": "$url.sha256sum"
+        }
+    }
+}
