@@ -13,6 +13,18 @@
         }
     },
     "extract_dir": "nvim-win64",
+    "pre_install": [
+        "foreach ($folder in @('nvim', 'nvim-data')) {",
+        "    $Software = \"$env:LOCALAPPDATA\\$folder\"; $SoftwarePersist = \"$persist_dir\\$folder\"",
+        "    if (Test-Path $SoftwarePersist) { Remove-Item $Software -Force -Recurse -ErrorAction SilentlyContinue }",
+        "    else { mkdir $Software -ErrorAction SilentlyContinue; Move-Item $Software $SoftwarePersist -Force }",
+        "    New-Item -Type Junction -Path $Software -Target $SoftwarePersist | Out-Null }"
+    ],
+    "pre_uninstall": [
+        "foreach ($folder in @('nvim', 'nvim-data')) {",
+        "    $Software = \"$env:LOCALAPPDATA\\$folder\"",
+        "    Remove-Item $Software -Force -Recurse -ErrorAction SilentlyContinue }"
+    ],
     "bin": "bin\\nvim.exe",
     "shortcuts": [
         [
@@ -21,10 +33,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://api.github.com/repos/neovim/neovim/releases/latest",
-        "jsonpath": "$.body",
-        "regex": "NVIM v(?<majorVersion>[\\w.-]+)\\.(?<minorVersion>[\\w.-]+)\\.(?<patchVersion>[\\w.-]+)",
-        "replace": "${majorVersion}.${minorVersion}.${patchVersion}"
+        "github": "https://github.com/neovim/neovim"
     },
     "autoupdate": {
         "architecture": {
