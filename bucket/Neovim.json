@@ -26,12 +26,6 @@
         "    Remove-Item $Software -Force -Recurse -ErrorAction SilentlyContinue }"
     ],
     "bin": "bin\\nvim.exe",
-    "shortcuts": [
-        [
-            "neovim.exe",
-            "Neovim"
-        ]
-    ],
     "checkver": {
         "github": "https://github.com/neovim/neovim"
     },
