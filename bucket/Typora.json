@@ -1,0 +1,60 @@
+{
+    "version": "1.9.5",
+    "description": "一款所见即所得的 Markdown 编辑器和阅读器",
+    "homepage": "https://typora.io",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://support.typora.io/License-Agreement/"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download2.typoraio.cn/windows/typora-setup-x64-1.9.5.exe",
+            "hash": "047deab87662bcb6222f7900164cddb08e0247feac179039067db9eeb9d79447"
+        },
+        "32bit": {
+            "url": "https://download2.typoraio.cn/windows/typora-setup-ia32-1.9.5.exe",
+            "hash": "786247db5c9c5f18870fb7683573e0d5c55ba507cb0ee52618935f9ebab222a8"
+        },
+        "arm64": {
+            "url": "https://download2.typoraio.cn/windows/typora-setup-arm64-1.9.5.exe",
+            "hash": "d3167dee37b28f3ef24156a459b489281315bc5474e2c87e0c7159978e9d4ee1"
+        }
+    },
+    "innosetup": true,
+    "pre_install": [
+        "foreach ($folder in @('Typora')) {",
+        "    $Software = \"$env:APPDATA\\$folder\"; $SoftwarePersist = \"$persist_dir\\$folder\"",
+        "    if (Test-Path $SoftwarePersist) { Remove-Item $Software -Force -Recurse -ErrorAction SilentlyContinue }",
+        "    else { mkdir $Software -ErrorAction SilentlyContinue; Move-Item $Software $SoftwarePersist -Force }",
+        "    New-Item -Type Junction -Path $Software -Target $SoftwarePersist | Out-Null }"
+    ],
+    "pre_uninstall": [
+        "foreach ($folder in @('Typora')) {",
+        "    $Software = \"$env:APPDATA\\$folder\"",
+        "    Remove-Item $Software -Force -Recurse -ErrorAction SilentlyContinue }"
+    ],
+    "bin": "Typora.exe",
+    "shortcuts": [
+        [
+            "Typora.exe",
+            "Typora"
+        ]
+    ],
+    "checkver": {
+        "url": "https://typora.io/releases/stable",
+        "regex": "<h2>([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download2.typoraio.cn/windows/typora-setup-x64-$version.exe"
+            },
+            "32bit": {
+                "url": "https://download2.typoraio.cn/windows/typora-setup-ia32-$version.exe"
+            },
+            "arm64": {
+                "url": "https://download2.typoraio.cn/windows/typora-setup-arm64-$version.exe"
+            }
+        }
+    }
+}
