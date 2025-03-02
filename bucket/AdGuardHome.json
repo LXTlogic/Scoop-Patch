@@ -2,7 +2,7 @@
     "version": "0.107.57",
     "description": "AdGuard Home 是一款全网广告拦截与反跟踪软件",
     "homepage": "https://github.com/AdguardTeam/AdGuardHome",
-    "notes": "以服务模式运行：sudo AdGuardHome -s install (https://adguard-dns.io/kb/zh-CN/adguard-home/getting-started/#service)",
+    "notes": "以服务模式运行：sudo AdGuardHome -s install",
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
