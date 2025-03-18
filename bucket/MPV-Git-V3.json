@@ -31,7 +31,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20250304/mpv-x86_64-v3-$version-git-$matchCommit.7z"
+                "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/$version/mpv-x86_64-v3-$version-git-$matchCommit.7z"
             }
         }
     }
