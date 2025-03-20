@@ -1,26 +1,45 @@
 {
-    "description": "A modern shell for the GitHub era..",
+    "description": "一个新类型的 Shell",
     "homepage": "https://www.nushell.sh/",
-    "version": "0.63.0",
+    "version": "0.103.0",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/nushell/nushell/releases/download/0.63.0/nu_0_63_0_windows.zip",
-            "hash": "8b598022ca31b919ccb10e3468d0b161df24f983e68bd4dbbdcbd35f5207e57e"
+            "url": "https://github.com/nushell/nushell/releases/download/0.103.0/nu-0.103.0-x86_64-pc-windows-msvc.zip",
+            "hash": "6036d0279566b7160ddbfca1ca013d080399858d91cbc505fe88651c669f2eea"
+        },
+        "arm64": {
+            "url": "https://github.com/nushell/nushell/releases/download/0.103.0/nu-0.103.0-aarch64-pc-windows-msvc.zip",
+            "hash": "79ee46ad702e4f422b180d9930f9dbda506d285ad673104445c80c68a6705cd4"
         }
     },
+    "shortcuts": [
+        [
+            "nu.exe",
+            "Nu Shell"
+        ]
+    ],
     "bin": "nu.exe",
-    "extract_dir": "nu_0_63_0_windows/nushell-0.63.0",
-    "env_add_path": ".",
+    "post_install": [
+        " [System.Drawing.Icon]::ExtractAssociatedIcon(\"$dir\\nu.exe\" ).ToBitmap().Save(\"$dir\\nu.bmp\")",
+        "if (Test-Path \"$persist_dir\") { Remove-Item -Recurse -Force -ErrorAction SilentlyContinue \"$env:APPDATA\\nushell\" }",
+        "else { mkdir \"$env:APPDATA\\nushell\" -ErrorAction SilentlyContinue; Move-Item $appDataDir \"$persist_dir\" -Force }",
+        "New-Item -Type Junction -Path \"$env:APPDATA\\nushell\" -Target \"$persist_dir\" | Out-Null"
+    ],
+    "post_uninstall": [
+        "Remove-Item -Recurse -Force -ErrorAction SilentlyContinue \"$env:APPDATA\\nushell\""
+    ],
     "checkver": {
         "github": "https://github.com/nushell/nushell"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/nushell/nushell/releases/download/$version/nu_$underscoreVersion_windows.zip"
+                "url": "https://github.com/nushell/nushell/releases/download/$version/nu-$version-x86_64-pc-windows-msvc.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/nushell/nushell/releases/download/$version/nu-$version-aarch64-pc-windows-msvc.zip"
             }
-        },
-        "extract_dir": "nu_$underscoreVersion_windows/nushell_$Version"
+        }
     }
 }
