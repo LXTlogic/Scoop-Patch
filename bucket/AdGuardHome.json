@@ -15,7 +15,7 @@
         },
         "arm64": {
             "url": "https://gh-proxy.com/github.com/AdguardTeam/AdGuardHome/releases/download/v0.107.56/AdGuardHome_windows_arm64.zip",
-            "hash": ""
+            "hash": "6e0197d2f4f021bbd19bb1346fda6f0174ccba89f3f978420850b140d5b49c38"
         }
     },
     "pre_install": "if (!(Test-Path \"$persist_dir\\AdGuardHome.yaml\")) { New-Item \"$dir\\AdGuardHome.yaml\" | Out-Null }",
