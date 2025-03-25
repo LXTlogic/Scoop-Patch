@@ -26,9 +26,7 @@
         "else { mkdir \"$env:APPDATA\\nushell\" -ErrorAction SilentlyContinue; Move-Item $appDataDir \"$persist_dir\" -Force }",
         "New-Item -Type Junction -Path \"$env:APPDATA\\nushell\" -Target \"$persist_dir\" | Out-Null"
     ],
-    "post_uninstall": [
-        "Remove-Item -Recurse -Force -ErrorAction SilentlyContinue \"$env:APPDATA\\nushell\""
-    ],
+    "post_uninstall": "Remove-Item -Recurse -Force -ErrorAction SilentlyContinue \"$env:APPDATA\\nushell\"",
     "checkver": {
         "github": "https://github.com/nushell/nushell"
     },
