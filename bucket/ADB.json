@@ -1,10 +1,10 @@
 {
-    "version": "35.0.2",
+    "version": "36.0.0",
     "description": "安卓 SDK 的一个组件，包含与安卓平台进行交互的工具，主要是 adb 和 fastboot",
     "homepage": "https://developer.android.com/studio/releases/platform-tools",
     "license": "Apache-2.0",
-    "url": "https://dl.google.com/android/repository/platform-tools_r35.0.2-win.zip",
-    "hash": "2975A3EAC0B19182748D64195375AD056986561D994FFFBDC64332A516300BB9",
+    "url": "https://dl.google.com/android/repository/platform-tools_r36.0.0-win.zip",
+    "hash": "24bd8bebbbb58b9870db202b5c6775c4a49992632021c60750d9d8ec8179d5f0",
     "extract_dir": "platform-tools",
     "bin": [
         "adb.exe",
