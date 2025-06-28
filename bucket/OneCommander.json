@@ -1,31 +1,31 @@
 {
-    "version": "3.98.1.0",
-    "description": "一款功能强大且灵活的双窗格文件资源管理器",
-    "homepage": "https://onecommander.com/",
-    "license": {
-        "identifier": "Freeware",
-        "url": "https://onecommander.com/license.txt"
-    },
-    "url": "https://onecommander.com/OneCommander3.98.1.0.zip",
-    "hash": "223b05179e50ed30eeb50648b7ee6ede69262872a6900df6bbe5ce6fd681d83a",
-    "shortcuts": [
-        [
-            "OneCommander.exe",
-            "OneCommander"
-        ]
-    ],
-    "persist": [
-        "Logs",
-        "Resources",
-        "Settings",
-        "Templates",
-        "Themes"
-    ],
-    "bin": "OneCommander.exe",
-    "checkver": {
-        "regex": "OneCommander([\\d.]+)\\.zip"
-    },
-    "autoupdate": {
-        "url": "https://onecommander.com/OneCommander$version.zip"
-    }
+  "version": "3.98.1.0",
+  "description": "一款功能强大且灵活的双窗格文件资源管理器",
+  "homepage": "https://onecommander.com/",
+  "license": {
+    "identifier": "Freeware",
+    "url": "https://onecommander.com/license.txt"
+  },
+  "url": "https://onecommander.com/OneCommander3.98.1.0.zip",
+  "hash": "223b05179e50ed30eeb50648b7ee6ede69262872a6900df6bbe5ce6fd681d83a",
+  "shortcuts": [
+    [
+      "OneCommander.exe",
+      "OneCommander"
+    ]
+  ],
+  "persist": [
+    "Logs",
+    "Resources",
+    "Settings",
+    "Templates",
+    "Themes"
+  ],
+  "bin": "OneCommander.exe",
+  "checkver": {
+    "regex": "OneCommander([\\d.]+)\\.zip"
+  },
+  "autoupdate": {
+    "url": "https://onecommander.com/OneCommander$version.zip"
+  }
 }

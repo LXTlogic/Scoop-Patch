@@ -1,42 +1,42 @@
 {
-    "version": "0.11.2",
-    "description": "专注于可扩展性和可用性的 Vim 复刻版",
-    "homepage": "https://neovim.io/",
-    "license": "Apache-2.0,Vim",
-    "suggest": {
-        "vcredist": "Scoop-Patch/VCRedist2022"
-    },
-    "architecture": {
-        "64bit": {
-            "url": "https://github.com/neovim/neovim/releases/download/v0.11.2/nvim-win64.zip",
-            "hash": "dfa66afc95422b7c4a0f8ae330f30a00dbb8e9848993d7bfde8e2e85be30de13"
-        }
-    },
-    "extract_dir": "nvim-win64",
-    "pre_install": [
-        "foreach ($folder in @('nvim', 'nvim-data')) {",
-        "    $Software = \"$env:LOCALAPPDATA\\$folder\"; $SoftwarePersist = \"$persist_dir\\$folder\"",
-        "    if (Test-Path $SoftwarePersist) { Remove-Item $Software -Force -Recurse -ErrorAction SilentlyContinue }",
-        "    else { mkdir $Software -ErrorAction SilentlyContinue; Move-Item $Software $SoftwarePersist -Force }",
-        "    New-Item -Type Junction -Path $Software -Target $SoftwarePersist | Out-Null }"
-    ],
-    "pre_uninstall": [
-        "foreach ($folder in @('nvim', 'nvim-data')) {",
-        "    $Software = \"$env:LOCALAPPDATA\\$folder\"",
-        "    Remove-Item $Software -Force -Recurse -ErrorAction SilentlyContinue }"
-    ],
-    "bin": "bin\\nvim.exe",
-    "checkver": {
-        "github": "https://github.com/neovim/neovim"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/neovim/neovim/releases/download/v$version/nvim-win64.zip"
-            }
-        },
-        "hash": {
-            "url": "$url.sha256sum"
-        }
+  "version": "0.11.2",
+  "description": "专注于可扩展性和可用性的 Vim 复刻版",
+  "homepage": "https://neovim.io/",
+  "license": "Apache-2.0,Vim",
+  "suggest": {
+    "vcredist": "Scoop-Patch/VCRedist2022"
+  },
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/neovim/neovim/releases/download/v0.11.2/nvim-win64.zip",
+      "hash": "dfa66afc95422b7c4a0f8ae330f30a00dbb8e9848993d7bfde8e2e85be30de13"
     }
+  },
+  "extract_dir": "nvim-win64",
+  "pre_install": [
+    "foreach ($folder in @('nvim', 'nvim-data')) {",
+    "    $Software = \"$env:LOCALAPPDATA\\$folder\"; $SoftwarePersist = \"$persist_dir\\$folder\"",
+    "    if (Test-Path $SoftwarePersist) { Remove-Item $Software -Force -Recurse -ErrorAction SilentlyContinue }",
+    "    else { mkdir $Software -ErrorAction SilentlyContinue; Move-Item $Software $SoftwarePersist -Force }",
+    "    New-Item -Type Junction -Path $Software -Target $SoftwarePersist | Out-Null }"
+  ],
+  "pre_uninstall": [
+    "foreach ($folder in @('nvim', 'nvim-data')) {",
+    "    $Software = \"$env:LOCALAPPDATA\\$folder\"",
+    "    Remove-Item $Software -Force -Recurse -ErrorAction SilentlyContinue }"
+  ],
+  "bin": "bin\\nvim.exe",
+  "checkver": {
+    "github": "https://github.com/neovim/neovim"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/neovim/neovim/releases/download/v$version/nvim-win64.zip"
+      }
+    },
+    "hash": {
+      "url": "$url.sha256sum"
+    }
+  }
 }
