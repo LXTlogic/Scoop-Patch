@@ -1,10 +1,10 @@
 {
-    "version": "0.16.0",
+    "version": "0.17.0",
     "description": "一个用于下载 Kemono.su / Kemono.party 中作品内容的实用命令行工具",
     "homepage": "https://github.com/Ljzd-PRO/KToolBox",
     "license": "BSD-3-Clause",
-    "url": "https://github.com/Ljzd-PRO/KToolBox/releases/download/v0.16.0/ktoolbox-executable-Windows-x86_64-v0.16.0.zip",
-    "hash": "5f0a757d17eaed396f8ec39ba3263eac5142262df48317a7ae0dc07e9cd12c0e",
+    "url": "https://github.com/Ljzd-PRO/KToolBox/releases/download/v0.17.0/ktoolbox-executable-Windows-x86_64-v0.17.0.zip",
+    "hash": "25a1e2851b36980387bcdfe206fda676298ed76665d1bf83b8bd3c84304c792e",
     "extract_dir": "ktoolbox-executable-Windows-x86_64",
     "bin": "ktoolbox.exe",
     "shortcuts": [
