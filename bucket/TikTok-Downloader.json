@@ -5,6 +5,13 @@
     "license": "GPL-3.0-only",
     "url": "https://github.com/JoeanAmier/TikTokDownloader/releases/download/5.7/DouK-Downloader_V5.7_Windows_X64.zip",
     "hash": "e923208556add4b99330c3b3dc0739c60898b3d814a6b0c20c68b9b7f7ce68d9",
+    "bin": [
+        [
+            "main.exe",
+            "TikTok-Downloader"
+        ]
+    ],
+    "persist": "_internal\\Volume",
     "shortcuts": [
         [
             "main.exe",
