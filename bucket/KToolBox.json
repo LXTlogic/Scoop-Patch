@@ -1,24 +1,39 @@
 {
-    "version": "0.17.0",
-    "description": "一个用于下载 Kemono.su / Kemono.party 中作品内容的实用命令行工具",
-    "homepage": "https://github.com/Ljzd-PRO/KToolBox",
-    "license": "BSD-3-Clause",
-    "url": "https://github.com/Ljzd-PRO/KToolBox/releases/download/v0.17.0/ktoolbox-executable-Windows-x86_64-v0.17.0.zip",
-    "hash": "25a1e2851b36980387bcdfe206fda676298ed76665d1bf83b8bd3c84304c792e",
-    "extract_dir": "ktoolbox-executable-Windows-x86_64",
-    "bin": "ktoolbox.exe",
-    "shortcuts": [
-        [
-            "ktoolbox.exe",
-            "KToolBox"
-        ]
-    ],
-    "persist": "example.env",
-    "checkver": {
-        "github": "https://github.com/Ljzd-PRO/KToolBox"
+  "version": "0.23.0",
+  "description": "一个用于下载 Kemono.cr / Kemono.su / Kemono.party 中帖子内容的实用命令行工具",
+  "homepage": "https://github.com/Ljzd-PRO/KToolBox",
+  "license": "BSD-3-Clause",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/Ljzd-PRO/KToolBox/releases/download/v0.23.0/ktoolbox-Windows-x64-v0.23.0.zip",
+      "hash": "7b39f730d303b754966fc269cd11e07847df7fed490157101e131418524b0c8c",
+      "extract_dir": "ktoolbox-Windows-x64"
     },
-    "autoupdate": {
-        "url": "https://github.com/Ljzd-PRO/KToolBox/releases/download/v$version/ktoolbox-executable-Windows-x86_64-v$version.zip",
-        "extract_dir": "ktoolbox-executable-Windows-x86_64"
+    "32bit": {
+      "url": "https://github.com/Ljzd-PRO/KToolBox/releases/download/v0.23.0/ktoolbox-Windows-x86-v0.23.0.zip",
+      "hash": "30abad80695e2837589b38168f627a7248e144705335c3f18325458e01ce2edf",
+      "extract_dir": "ktoolbox-Windows-x86"
     }
+  },
+  "bin": "ktoolbox.exe",
+  "shortcuts": [
+    [
+      "ktoolbox.exe",
+      "KToolBox"
+    ]
+  ],
+  "persist": "example.env",
+  "checkver": {
+    "github": "https://github.com/Ljzd-PRO/KToolBox"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/Ljzd-PRO/KToolBox/releases/download/v$version/ktoolbox-Windows-x64-v$version.zip"
+      },
+      "32bit": {
+        "url": "https://github.com/Ljzd-PRO/KToolBox/releases/download/v$version/ktoolbox-Windows-x86-v$version.zip"
+      }
+    }
+  }
 }
