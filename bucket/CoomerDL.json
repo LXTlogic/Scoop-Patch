@@ -1,0 +1,19 @@
+{
+    "version": "0.8.11.5",
+    "description": "一个用于简化从 Coomer 下载图像和视频的工具",
+    "homepage": "https://emydevs.com",
+    "license": "MIT",
+    "url": "https://github.com/Emy69/CoomerDL/releases/download/V0.8.11.5/CoomerDL.zip",
+    "hash": "259a217118ca82b31d2e751c30283b9808d27181e4d9954a38646b64b204b015",
+    "extract_dir": "CoomerDL",
+    "shortcuts": [
+        [
+            "main.exe",
+            "CoomerDL"
+        ]
+    ],
+    "checkver": "https://github.com/Emy69/CoomerDL",
+    "autoupdate": {
+        "url": "https://github.com/Emy69/CoomerDL/releases/download/V$version/CoomerDL.zip"
+    }
+}
