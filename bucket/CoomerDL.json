@@ -6,22 +6,20 @@
     "url": "https://github.com/Emy69/CoomerDL/releases/download/v0.8.12/CoomerDL.zip",
     "hash": "2504e458c372727554406124d89a98ee84bdfc74f2781141f776ebc64693d3b2",
     "extract_dir": "CoomerDL",
-    "pre_install": [
-      "New-Item -Path \"$dir/resources/config\" -ItemType \"File\" -Name \"settings.json\""
-    ],
+    "pre_install": "New-Item -Path \"$dir/resources/config\" -ItemType \"File\" -Name \"settings.json\"",
     "bin": [
-      [
-        "main.exe",
-        "CoomerDL"
-      ]
+        [
+            "main.exe",
+            "CoomerDL"
+        ]
     ],
-    "persist" :[
-      "resources\\config\\cookies",
-      "resources\\config\\download_path",
-      "resources\\config\\languages\\save_language",
-      "resources\\config\\logs",
-      "resources\\config\\downloads.db",
-      "resources\\config\\settings.json"
+    "persist": [
+        "resources\\config\\cookies",
+        "resources\\config\\download_path",
+        "resources\\config\\languages\\save_language",
+        "resources\\config\\logs",
+        "resources\\config\\downloads.db",
+        "resources\\config\\settings.json"
     ],
     "shortcuts": [
         [
@@ -30,7 +28,7 @@
         ]
     ],
     "checkver": {
-      "github": "https://github.com/Emy69/CoomerDL"
+        "github": "https://github.com/Emy69/CoomerDL"
     },
     "autoupdate": {
         "url": "https://github.com/Emy69/CoomerDL/releases/download/v$version/CoomerDL.zip"
