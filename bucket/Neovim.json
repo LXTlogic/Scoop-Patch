@@ -3,9 +3,6 @@
     "description": "专注于可扩展性和可用性的 Vim 复刻版",
     "homepage": "https://neovim.io/",
     "license": "Apache-2.0,Vim",
-    "suggest": {
-        "vcredist": "Scoop-Patch/VCRedist2022"
-    },
     "architecture": {
         "64bit": {
             "url": "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-win64.zip",
