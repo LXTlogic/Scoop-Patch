@@ -6,7 +6,6 @@
     "url": "https://github.com/Emy69/CoomerDL/releases/download/v1.0/CoomerDL.zip",
     "hash": "6ac06096bd82e4d1b59f1bcc6fbf67ad78f9e7864976cc656845b3b7ccd5e277",
     "extract_dir": "CoomerDL",
-    "pre_install": "New-Item -Path \"$dir/resources/config\" -ItemType \"File\" -Name \"settings.json\"",
     "bin": [
         [
             "main.exe",
