@@ -6,10 +6,10 @@
     "url": "https://github.com/sindresorhus/recycle-bin/releases/download/v2.0.0/recycle-bin.exe",
     "hash": "06f2f20edd22757be8667348050f3aa92b3cd23b05d9e21815dca83f453ceb78",
     "bin": [
-      [
-        "recycle-bin.exe",
-        "Trash"
-      ]
+        [
+            "recycle-bin.exe",
+            "Trash"
+        ]
     ],
     "checkver": {
         "github": "https://github.com/sindresorhus/recycle-bin"
