@@ -22,7 +22,10 @@
         "    $Software = \"$env:LOCALAPPDATA\\$folder\"",
         "    Remove-Item $Software -Force -Recurse -ErrorAction SilentlyContinue }"
     ],
-    "bin": "bin\\nvim.exe",
+    "bin": [
+        "bin\\nvim.exe",
+        "bin\\xxd.exe"
+    ],
     "checkver": {
         "github": "https://github.com/neovim/neovim"
     },
