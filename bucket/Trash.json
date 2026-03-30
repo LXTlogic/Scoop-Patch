@@ -1,10 +1,18 @@
 {
-    "version": "2.0.0",
+    "version": "2.1.0",
     "description": "删除文件或文件夹到回收站",
     "homepage": "https://github.com/sindresorhus/recycle-bin",
     "license": "MIT",
-    "url": "https://github.com/sindresorhus/recycle-bin/releases/download/v2.0.0/recycle-bin.exe",
-    "hash": "06f2f20edd22757be8667348050f3aa92b3cd23b05d9e21815dca83f453ceb78",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/sindresorhus/recycle-bin/releases/download/v2.1.0/recycle-bin-v2.1.0-x86_64.zip",
+            "hash": "2abac174ca17209580f2c0ad909c685421b408f010ec2ead0ed39be6019e970d"
+        },
+        "32bit": {
+            "url": "https://github.com/sindresorhus/recycle-bin/releases/download/v2.1.0/recycle-bin-v2.1.0-i686.zip",
+            "hash": "80f13941b31a74949376014ac9213e4c8d6b3c3adf40ed03c964a7d2f046b74c"
+        }
+    },
     "bin": [
         [
             "recycle-bin.exe",
@@ -15,6 +23,6 @@
         "github": "https://github.com/sindresorhus/recycle-bin"
     },
     "autoupdate": {
-        "url": "https://github.com/sindresorhus/recycle-bin/releases/download/v$version/recycle-bin.exe"
+        "url": "https://github.com/sindresorhus/recycle-bin/releases/download/v$version/recycle-bin-v$version-x86_64.zip"
     }
 }
