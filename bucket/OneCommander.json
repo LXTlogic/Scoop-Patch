@@ -23,7 +23,7 @@
     ],
     "bin": "OneCommander.exe",
     "checkver": {
-        "regex": "OneCommander([\\d.]+)\\.zip"
+        "regex": "OneCommanderSetup([\\d.]+)\\.msi"
     },
     "autoupdate": {
         "url": "https://onecommander.com/OneCommander$version.zip"
