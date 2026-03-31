@@ -6,10 +6,15 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/neovim/neovim/releases/download/v0.12.0/nvim-win64.zip",
-            "hash": "7e6d4ac6b22a46e89b0da3ac560635ee39c00081f14093a8851154fb260b7428"
+            "hash": "7e6d4ac6b22a46e89b0da3ac560635ee39c00081f14093a8851154fb260b7428",
+            "extract_dir": "nvim-win64"
+        },
+        "arm64": {
+            "url": "https://github.com/neovim/neovim/releases/download/v0.12.0/nvim-win-arm64.zip",
+            "hash": "37e4f5df3a4d24e7e42b1b893115fc736e47192aeb62175995aaa54745542159",
+            "extract_dir": "nvim-win-arm64"
         }
     },
-    "extract_dir": "nvim-win64",
     "pre_install": [
         "foreach ($folder in @('nvim', 'nvim-data')) {",
         "    $Software = \"$env:LOCALAPPDATA\\$folder\"; $SoftwarePersist = \"$persist_dir\\$folder\"",
@@ -33,10 +38,10 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/neovim/neovim/releases/download/v$version/nvim-win64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/neovim/neovim/releases/download/v$version/nvim-win-arm64.zip"
             }
-        },
-        "hash": {
-            "url": "$url.sha256sum"
         }
     }
 }

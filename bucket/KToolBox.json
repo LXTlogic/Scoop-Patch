@@ -1,7 +1,7 @@
 {
     "version": "0.24.0",
     "description": "一个用于下载 Kemono.cr / Kemono.su / Kemono.party 中帖子内容的实用命令行工具",
-    "homepage": "https://github.com/Ljzd-PRO/KToolBox",
+    "homepage": "https://ktoolbox.readthedocs.io/",
     "license": "BSD-3-Clause",
     "architecture": {
         "64bit": {

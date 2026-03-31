@@ -5,10 +5,7 @@
     "license": "MIT",
     "url": "https://github.com/Yuvi9587/Kemono-Downloader/releases/download/v8.0.1/Kemono.Downloader.exe",
     "hash": "952429cf8f89beaa2ad3efe933f0bbe560c570f5b98e7268193c06a4bbaf3a2b",
-    "bin": [
-        "Kemono.Downloader.exe",
-        "Kemono.Downloader"
-    ],
+    "bin": "Kemono.Downloader.exe",
     "persist": [
         [
             "appdata",
@@ -21,9 +18,7 @@
             "Kemono.Downloader"
         ]
     ],
-    "checkver": {
-        "github": "https://github.com/Yuvi9587/Kemono-Downloader"
-    },
+    "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/Yuvi9587/Kemono-Downloader/releases/download/v$version/Kemono.Downloader.exe"
     }

@@ -17,9 +17,7 @@
             "ExifGlass"
         ]
     ],
-    "checkver": {
-        "github": "https://github.com/d2phap/ExifGlass"
-    },
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
