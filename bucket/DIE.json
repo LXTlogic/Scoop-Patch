@@ -1,0 +1,39 @@
+{
+    "version": "3.21",
+    "description": "一款功能强大的文件类型识别工具",
+    "homepage": "https://github.com/horsicq/Detect-It-Easy",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/horsicq/DIE-engine/releases/download/3.21/die_win64_portable_3.21_x64.zip",
+            "hash": "078f2934f267392247f9c7b759a1c2457a48bc2000b25b80c2f129955ee4a3b9"
+        },
+        "32bit": {
+            "url": "https://github.com/horsicq/DIE-engine/releases/download/3.21/die_win32_portable_3.21_x86.zip",
+            "hash": "7d7195f757c45f6b69364d167c9958fa60339d53876a87e4a1edbcbf67d1e477"
+        }
+    },
+    "extract_dir": "die",
+    "pre_install": "if (!(Test-Path \"$persist_dir\\die.ini\")) { New-Item \"$dir\\die.ini\" | Out-Null }",
+    "bin": "diec.exe",
+    "persist": "die.ini",
+    "shortcuts": [
+        [
+            "die.exe",
+            "Crack\\Detect It Easy"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/horsicq/DIE-engine"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/horsicq/DIE-engine/releases/download/$version/die_win64_portable_$version_x64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/horsicq/DIE-engine/releases/download/$version/die_win32_portable_$version.zip"
+            }
+        }
+    }
+}
