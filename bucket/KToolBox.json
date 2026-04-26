@@ -19,7 +19,7 @@
     "shortcuts": [
         [
             "ktoolbox.exe",
-            "KToolBox"
+            "Downloader\\KToolBox"
         ]
     ],
     "persist": "example.env",

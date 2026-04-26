@@ -21,7 +21,7 @@
     ],
     "bin": "nu.exe",
     "post_install": [
-        " [System.Drawing.Icon]::ExtractAssociatedIcon(\"$dir\\nu.exe\" ).ToBitmap().Save(\"$dir\\nu.bmp\")",
+        "[System.Drawing.Icon]::ExtractAssociatedIcon(\"$dir\\nu.exe\" ).ToBitmap().Save(\"$dir\\nu.bmp\")",
         "if (Test-Path \"$persist_dir\") { Remove-Item -Recurse -Force -ErrorAction SilentlyContinue \"$env:APPDATA\\nushell\" }",
         "else { mkdir \"$env:APPDATA\\nushell\" -ErrorAction SilentlyContinue; Move-Item $appDataDir \"$persist_dir\" -Force }",
         "New-Item -Type Junction -Path \"$env:APPDATA\\nushell\" -Target \"$persist_dir\" | Out-Null"

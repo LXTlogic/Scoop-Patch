@@ -23,7 +23,7 @@
     "shortcuts": [
         [
             "main.exe",
-            "XHS-Downloader"
+            "Downloader\\XHS-Downloader"
         ]
     ],
     "checkver": "github",

@@ -19,7 +19,7 @@
     "shortcuts": [
         [
             "main.exe",
-            "TikTok-Downloader"
+            "Downloader\\TikTok-Downloader"
         ]
     ],
     "checkver": {

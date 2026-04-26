@@ -15,7 +15,7 @@
     "shortcuts": [
         [
             "hitomi_downloader_GUI.exe",
-            "Hitomi Downloader"
+            "Downloader\\Hitomi Downloader"
         ]
     ],
     "checkver": {

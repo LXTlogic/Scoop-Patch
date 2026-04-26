@@ -15,7 +15,7 @@
     "shortcuts": [
         [
             "JDownloader.bat",
-            "JDownloader",
+            "Downloader\\JDownloader",
             "",
             "icon.ico"
         ]

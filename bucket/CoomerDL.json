@@ -23,7 +23,7 @@
     "shortcuts": [
         [
             "main.exe",
-            "CoomerDL"
+            "Downloader\\CoomerDL"
         ]
     ],
     "checkver": {
