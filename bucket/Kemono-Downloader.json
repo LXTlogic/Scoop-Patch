@@ -5,17 +5,13 @@
     "license": "MIT",
     "url": "https://github.com/Yuvi9587/Kemono-Downloader/releases/download/v9.0.0/Kemono.Downloader.v9.0.0.zip",
     "hash": "d7164f556183225bc31bd5dfd26bddea7b6382fea437197695424bc5ba32e196",
-    "bin": "Kemono.Downloader.exe",
-    "persist": [
-        [
-            "appdata",
-            "data"
-        ]
-    ],
+    "extract_dir": "Kemono Downloader",
+    "bin": "Kemono Downloader.exe",
+    "persist": "appdata",
     "shortcuts": [
         [
-            "Kemono.Downloader.exe",
-            "Downloader\\Kemono.Downloader"
+            "Kemono Downloader.exe",
+            "Downloader\\Kemono Downloader"
         ]
     ],
     "checkver": "github",
