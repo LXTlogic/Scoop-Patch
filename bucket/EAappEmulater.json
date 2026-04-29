@@ -10,15 +10,13 @@
         }
     },
     "pre_install": [
-        "$folder = \"EAappEmulater\"",
-        "$SoftwareData = [Environment]::GetFolderPath('MyDocuments') + '\\' + $folder; $SoftwarePersist = \"$persist_dir\"",
+        "$folder = \"EAappEmulater\"; $SoftwareData = [Environment]::GetFolderPath('MyDocuments') + '\\' + $folder; $SoftwarePersist = \"$persist_dir\"",
         "if (Test-Path \"$SoftwarePersist\") { Move-Item \"$SoftwareData\" \"$SoftwarePersist\\$folder.old\" -Force -ErrorAction SilentlyContinue }",
         "else { mkdir \"$SoftwareData\" -ErrorAction SilentlyContinue; Move-Item \"$SoftwareData\" \"$SoftwarePersist\\$folder\" -Force }",
         "New-Item -Type Junction -Path \"$SoftwareData\" -Target \"$SoftwarePersist\" | Out-Null"
     ],
     "pre_uninstall": [
-        "$folder = \"EAappEmulater\"",
-        "$SoftwareData = [Environment]::GetFolderPath('MyDocuments') + '\\' + $folder",
+        "$folder = \"EAappEmulater\"; $SoftwareData = [Environment]::GetFolderPath('MyDocuments') + '\\' + $folder",
         "Remove-Item \"$SoftwareData\" -Force -Recurse -ErrorAction SilentlyContinue"
     ],
     "bin": [
@@ -30,7 +28,7 @@
     "shortcuts": [
         [
             "EADesktop.exe",
-            "Game\\EAappEmulater"
+            "Games\\EAappEmulater"
         ]
     ],
     "checkver": "github",

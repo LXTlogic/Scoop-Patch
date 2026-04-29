@@ -1,0 +1,32 @@
+{
+    "version": "2.12.9",
+    "description": "用于查看和提取 Windows 安装程序(.msi)文件内容",
+    "homepage": "https://lessmsi.activescott.com",
+    "license": "MIT",
+    "url": "https://github.com/activescott/lessmsi/releases/download/v2.12.9/lessmsi-v2.12.9.zip",
+    "hash": "5b4e187e74b184ad3a63ccf06c3d17dae2b8c4b6c298a996dbd51a9f6db29d21",
+    "pre_install": [
+        "$folder = \"LessMsi\"",
+        "$Software = \"$env:LOCALAPPDATA\\$folder\"; $SoftwarePersist = \"$persist_dir\"",
+        "if (Test-Path $SoftwarePersist) { Remove-Item $Software -Force -Recurse -ErrorAction SilentlyContinue }",
+        "else { mkdir $Software -ErrorAction SilentlyContinue; Move-Item $Software $SoftwarePersist -Force }",
+        "New-Item -Type Junction -Path $Software -Target $SoftwarePersist | Out-Null"
+    ],
+    "pre_uninstall": [
+        "$folder = \"LessMsi\"; $Software = \"$env:LOCALAPPDATA\\$folder\"",
+        "Remove-Item $Software -Force -Recurse -ErrorAction SilentlyContinue"
+    ],
+    "bin": "lessmsi.exe",
+    "shortcuts": [
+        [
+            "lessmsi-gui.exe",
+            "Crack\\Less MSIérables"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/activescott/lessmsi"
+    },
+    "autoupdate": {
+        "url": "https://gh-proxy.com/https://github.com/activescott/lessmsi/releases/download/v$version/lessmsi-v$version.zip"
+    }
+}
