@@ -1,0 +1,30 @@
+{
+    "##": "The homepage requires JS to load (not suitable for checkver)",
+    "version": "0.0.9.5",
+    "description": "EXE analyzer inspired by PEiD. Designed to detect exe signatures, compressor format and dump internal information.",
+    "homepage": "https://exeinfo.orgfree.com/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://github.com/ExeinfoASL/ASL"
+    },
+    "url": "https://github.com/ExeinfoASL/ASL/releases/download/v0.0.9.5/exeinfope.zip",
+    "hash": "5d572cc193f7a7286de300392e4df2697d15edb6c1dbb9caaceed6515607c967",
+    "extract_dir": "ExeinfoPE",
+    "bin": "exeinfope.exe",
+    "shortcuts": [
+        [
+            "exeinfope.exe",
+            "Crack\\EXEinfo PE"
+        ]
+    ],
+    "persist": [
+        "plugins",
+        "userdb.txt"
+    ],
+    "checkver": {
+        "github": "https://github.com/ExeinfoASL/ASL"
+    },
+    "autoupdate": {
+        "url": "https://github.com/ExeinfoASL/ASL/releases/download/v$version/exeinfope.zip"
+    }
+}
