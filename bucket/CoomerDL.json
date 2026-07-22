@@ -1,10 +1,10 @@
 {
-    "version": "1.2.1",
+    "version": "1.2.2",
     "description": "一个用于简化从 Coomer 下载图像和视频的工具",
     "homepage": "https://emydevs.com",
     "license": "MIT",
-    "url": "https://github.com/Emy69/CoomerDL/releases/download/v1.2.1/CoomerDL.zip",
-    "hash": "fc42c7f4de6438a0b02c5215b4c3fc0b7f8ea623ba15b9cd1a16cc36082613e9",
+    "url": "https://github.com/Emy69/CoomerDL/releases/download/v1.2.2/CoomerDL.zip",
+    "hash": "bc258c7f76b17dfdd8406f042c9b0ae92532c15ed9e5482e0b0f335dd5053f83",
     "extract_dir": "CoomerDL",
     "bin": [
         [
