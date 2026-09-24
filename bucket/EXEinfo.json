@@ -1,6 +1,6 @@
 {
     "##": "The homepage requires JS to load (not suitable for checkver)",
-    "version": "0.1.0.0",
+    "version": "1.0.0",
     "description": "EXE analyzer inspired by PEiD. Designed to detect exe signatures, compressor format and dump internal information.",
     "homepage": "https://exeinfo.orgfree.com/",
     "license": {
