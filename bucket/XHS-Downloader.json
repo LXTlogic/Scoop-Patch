@@ -5,25 +5,21 @@
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/JoeanAmier/XHS-Downloader/releases/download/2.7/XHS-Downloader_V2.7_Windows_X64.zip",
-            "hash": "af260a35e1ae5071d52cbcc53cbfe0740bdc612beb2089f0734448ca07a0006c"
-        },
-        "arm64": {
-            "url": "https://github.com/JoeanAmier/XHS-Downloader/releases/download/2.7/XHS-Downloader_V2.7_Windows_ARM64.zip",
-            "hash": "af260a35e1ae5071d52cbcc53cbfe0740bdc612beb2089f0734448ca07a0006c"
+            "url": "https://github.com/JoeanAmier/XHS-Downloader/releases/download/2.8/XHS-Downloader_V2.8_Windows_X64.zip",
+            "hash": "53b1234e7b44f01d95912eb1d6a74473c7ffbdbc9e39d13da15623574cf66028"
         }
     },
     "bin": [
         [
-            "main.exe",
+            "XHS-Downloader-GUI.exe",
             "XHS-Downloader"
         ]
     ],
-    "persist": "_internal\\Volume",
+    "persist": "Volume",
     "shortcuts": [
         [
-            "main.exe",
-            "Downloader\\XHS-Downloader"
+            "XHS-Downloader-GUI.exe",
+            "Downloader\\XHS Downloader"
         ]
     ],
     "checkver": "github",

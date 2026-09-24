@@ -1,21 +1,28 @@
 {
-    "version": "9.1.4",
+    "version": "10.0",
     "description": "一个强大、功能丰富的 GUI 应用，可以从 Kemono、Coomer、Bunkr、Erome、Saint2 和 nhentai 在内的众多网站下载内容",
     "homepage": "https://github.com/Yuvi9587/Kemono-Downloader",
     "license": "MIT",
-    "url": "https://github.com/Yuvi9587/Kemono-Downloader/releases/download/v9.1.4/Kemono.Downloader.v9.1.4.zip",
-    "hash": "3b34756a005163b1fa1e2f0eeb35f5d968cf97cca6b022aef5e52e2983c0e4ed",
-    "extract_dir": "Kemono Downloader",
-    "bin": "Kemono Downloader.exe",
+    "url": ["https://github.com/Yuvi9587/Kemono-Downloader/releases/download/v10.0/Kemono.Downloader.exe",
+            "https://github.com/Yuvi9587/Kemono-Downloader/releases/download/v10.0/_internal.rar"
+    ],
+    "hash": [
+        "f6f16b7b8fcf70893d86d704380abdd06be9fc3d23f0e4905ccf2da757342bd6",
+        "2373965b2c599f3cbf7bac3cde08ae11167c4b4afb1ba1e7a216bebd8329a5ce"
+    ],
+    "bin": "Kemono.Downloader.exe",
     "persist": "appdata",
     "shortcuts": [
         [
-            "Kemono Downloader.exe",
+            "Kemono.Downloader.exe",
             "Downloader\\Kemono Downloader"
         ]
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/Yuvi9587/Kemono-Downloader/releases/download/v$version/Kemono.Downloader.v$version.zip"
+        "url": [
+            "https://github.com/Yuvi9587/Kemono-Downloader/releases/download/v$version/Kemono.Downloader.exe",
+            "https://github.com/Yuvi9587/Kemono-Downloader/releases/download/v$version/_internal.rar"
+        ]
     }
 }
