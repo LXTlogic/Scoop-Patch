@@ -11,14 +11,14 @@
     },
     "bin": [
         [
-            "main.exe",
+            "DouK-Downloader.exe",
             "TikTok-Downloader"
         ]
     ],
-    "persist": "_internal\\Volume",
+    "persist": "Volume",
     "shortcuts": [
         [
-            "main.exe",
+            "DouK-Downloader.exe",
             "Downloader\\TikTok-Downloader"
         ]
     ],
