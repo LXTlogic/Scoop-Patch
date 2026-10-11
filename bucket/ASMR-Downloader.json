@@ -1,13 +1,13 @@
 {
-    "version": "2.0.8",
+    "version": "2.0.9",
     "description": "一款 Go 语言命令行工具，用于搜索、下载、同步 asmr.one 音声作品，并提供简易 Web 播放界面",
     "homepage": "https://github.com/fireinrain/asmr-downloader",
     "notes": "运行 asmroner时，会在运行中的目录下生成设置文件夹，因此应当仅在特定目录或者用户目录下运行程序，不应随意变更运行目录",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/fireinrain/asmr-downloader/releases/download/v2.0.8/asmroner-windows-amd64-v2.0.8.zip",
-            "hash": "a7a64f85ea417db8ab3af10669462707241da7c65da0c65c53c0df1274c4619b"
+            "url": "https://github.com/fireinrain/asmr-downloader/releases/download/v2.0.9/asmroner-windows-amd64-v2.0.9.zip",
+            "hash": "770d9513149a2d92421526bea3c56f093254c343aead60ec5ab4cc077cad9ced"
         }
     },
     "bin": [
